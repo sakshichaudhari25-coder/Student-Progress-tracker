@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+
+    background:
+        radial-gradient(circle at top left, #123b43 0%, transparent 35%),
+        radial-gradient(circle at bottom right, #0d3038 0%, transparent 35%),
+        #071a21;
+
+    color: #f0fdfa;
+
+    padding: 50px 20px;
+}
+
+
+/* =========================
+   HEADING
+========================= */
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 10px;
+
+    color: #f0fdfa;
+
+    letter-spacing: 0.5px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 19px;
+    font-weight: 500;
+
+    color: #94a3b8;
+
+    margin-bottom: 35px;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+form {
+    width: 100%;
+    max-width: 520px;
+
+    margin: auto;
+
+    padding: 35px;
+
+    background: rgba(13, 40, 48, 0.95);
+
+    border: 1px solid #1e4a52;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.45);
+
+    backdrop-filter: blur(10px);
+
+    transition: 0.3s ease;
+}
+
+form:hover {
+    border-color: #2d6870;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 25px 55px rgba(0, 0, 0, 0.5);
+}
+
+
+/* =========================
+   LABEL
+========================= */
+
+label {
+    display: block;
+
+    margin-bottom: 9px;
+
+    color: #ccfbf1;
+
+    font-size: 15px;
+
+    font-weight: 600;
+}
+
+
+/* =========================
+   INPUT
+========================= */
+
+input {
+    width: 100%;
+
+    padding: 14px 16px;
+
+    margin-bottom: 24px;
+
+    background: #071a21;
+
+    color: #f0fdfa;
+
+    border: 1px solid #28515a;
+
+    border-radius: 11px;
+
+    outline: none;
+
+    font-size: 15px;
+
+    transition: 0.3s ease;
+}
+
+input:hover {
+    border-color: #3b7279;
+}
+
+input:focus {
+    border-color: #5eead4;
+
+    box-shadow:
+        0 0 0 3px rgba(94, 234, 212, 0.12);
+}
+
+input::placeholder {
+    color: #647f85;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+button {
+    width: 100%;
+
+    padding: 14px;
+
+    margin-top: 5px;
+
+    background: #5eead4;
+
+    color: #062126;
+
+    border: 1px solid #99f6e4;
+
+    border-radius: 11px;
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background: #99f6e4;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 10px 25px rgba(94, 234, 212, 0.18);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+
+/* =========================
+   PROGRESS PAGE LINK
+========================= */
+
+a {
+    display: block;
+
+    width: fit-content;
+
+    margin: 25px auto 0;
+
+    padding: 11px 20px;
+
+    background: #0d2830;
+
+    color: #99f6e4;
+
+    border: 1px solid #28515a;
+
+    border-radius: 10px;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+a:hover {
+    background: #123b43;
+
+    border-color: #5eead4;
+
+    color: #ccfbf1;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 30px 15px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 17px;
+    }
+
+    form {
+        padding: 25px 20px;
+    }
+}
